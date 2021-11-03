@@ -41,7 +41,7 @@ grep  -o "\<[b-z]*a\>" ./google-10000-english.txt | wc -w
 
 Команда:
 grep -o "\<[abcde]\{3,\}\>" ./google-10000-english.txt | wc -w
-Результат:
+Результат
 20
 
 grep "\<[abcde]\{4,\}\>" ./google-10000-english.txt | wc -w
