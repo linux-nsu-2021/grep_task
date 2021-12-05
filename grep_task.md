@@ -47,8 +47,18 @@ $ grep -o -i "[^ ]*[abc]\{5,\}" google-10000-english.txt
 
 Результат: 0
 
+Изменено:
+$ grep -o -i "\<[^ ]*[abc]\{4,\}[^ ]*\>" google-10000-english.txt | wc -l
+
+Результат: 1
+
 ### 9. Сколько файлов в каталоге /usr/share/doc содержит слово 'GPL'
 
 Команда: $ grep -rw /usr/share/doc -e "GPL" | wc -l
 
 Результат: 2331
+
+Изменено:
+$grep -rwl /usr/share/doc -e "GPL" | wc -l
+
+Результат: 276
